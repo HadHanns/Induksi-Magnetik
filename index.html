@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Induksi Magnetik</title>
+    <link rel="stylesheet" href="https://cdn.tailwindcss.com">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="magnetic.png">
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .sidebar {
+            .sidebar {
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                width: 64px;
+                background-color: #f1f1f1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Induksi Magnetik</title>
+        <link rel="stylesheet" href="https://cdn.tailwindcss.com">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="magnetic.png">
+        <style>
+            .container {
+                display: flex;
+            }
+
+            .content {
+                flex: 1;
+                padding: 80px;
+                padding-top: 16px;
+            }
+
+            .sidebar {
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                width: 64px;
+                background-color: #f1f1f1;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="sidebar">
+
+            <div class="flex h-screen w-16 flex-col justify-between border-e bg-white">
+                <div>
+                    <div class="inline-flex h-16 w-16 items-center justify-center">
+                        <span class="grid h-10 w-10 place-content-center rounded-lg bg-gray-100 text-xs text-gray-600">
+                            <div>
+                                <img src="magnetic.png" alt="Deskripsi gambar" width="300" height="200">
+                            </div>
+
+                        </span>
+                    </div>
+
+                    <div class="border-t border-gray-100">
+                        <div class="px-2">
+                            <div class="py-4">
+                                <a href="index.html"
+                                    class="t group relative flex justify-center rounded bg-blue-50 px-2 py-1.5 text-blue-700">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 opacity-75" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    </svg>
+
+                                    <span
+                                        class="absolute start-full top-1/2 ms-4 -translate-y-1/2 rounded bg-gray-900 px-2 py-1.5 text-xs font-medium text-white opacity-0 group-hover:opacity-100">
+                                        General
+                                    </span>
+                                </a>
+                            </div>
+
+                            <ul class="space-y-1 border-t border-gray-100 pt-4">
+
+
+                                <li>
+                                    <a href="programs.html"
+                                        class="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 hover:bg-gray-50 hover:text-gray-700">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 opacity-75" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                                        </svg>
+
+                                        <span
+                                            class="absolute start-full top-1/2 ms-4 -translate-y-1/2 rounded bg-gray-900 px-2 py-1.5 text-xs font-medium text-white opacity-0 group-hover:opacity-100">
+                                            Programs
+                                        </span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="teams.html"
+                                        class="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 hover:bg-gray-50 hover:text-gray-700">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 opacity-75" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                                        </svg>
+
+                                        <span
+                                            class="absolute start-full top-1/2 ms-4 -translate-y-1/2 rounded bg-gray-900 px-2 py-1.5 text-xs font-medium text-white opacity-0 group-hover:opacity-100">
+                                            Teams
+                                        </span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sticky inset-x-0 bottom-0 border-t border-gray-100 bg-white p-2">
+                    <form action="#">
+                        <button type="submit"
+                            class="group relative flex w-full justify-center rounded-lg px-2 py-1.5 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 opacity-75" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                            </svg>
+
+                            <span
+                                class="absolute start-full top-1/2 ms-4 -translate-y-1/2 rounded bg-gray-900 px-2 py-1.5 text-xs font-medium text-white opacity-0 group-hover:opacity-100">
+                                Keluar
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <h1 class="Judul">Induksi Magnetik</h1>
+            <br>
+            <br>
+            <h2 class="JudulParagraf">Pengertian Induksi Magnetik</h2>
+            <br>
+            <p class="ratakanankiri">
+                Induksi Elektromagnetik adalah kejadian terjadinya arus listrik karena adanya perubahan fluks magnetik.
+                Fluks magnetik merujuk pada jumlah garis gaya magnet yang melewati suatu bidang. Seorang ilmuwan asal
+                Jerman yang bernama Michael Faraday mengemukakan bahwa medan magnet dapat menghasilkan arus listrik.
+                Pada tahun 1821, Michael Faraday membuktikan bahwa perubahan medan magnet dapat menginduksi arus
+                listrik.
+
+            </p>
+            <br>
+            <p class="ratakanankiri">
+                Galvanometer adalah sebuah perangkat yang dapat digunakan untuk mendeteksi keberadaan aliran arus
+                listrik. Gaya gerak listrik yang terjadi akibat perubahan jumlah garis gaya magnet disebut sebagai GGL
+                induksi, sedangkan arus yang mengalir disebut arus induksi, dan prosesnya disebut sebagai induksi
+                elektromagnetik.
+
+            </p>
+            <br>
+            <p class="ratakanankiri bold">Beberapa faktor yang mempengaruhi besar GGL induksi adalah sebagai berikut:
+            <p>(1) Kecepatan perubahan
+                medan magnet, semakin cepat perubahan medan magnet, semakin besar GGL induksi yang terjadi.
+            </p>
+            <p>
+                (2) Jumlah
+                lilitan, semakin banyak lilitan, semakin besar GGL induksi yang terjadi.
+            </p>
+            <p>
+                (3) Kekuatan magnet, semakin
+                kuat keadaan magnet, semakin besar GGL induksi yang terjadi.
+            </p>
+            </p>
+            <img src="induksi magnetik.jpeg" alt="Deskripsi Gambar" width="350" height="250"
+                style="margin: 10px; border: 1px solid black;">Gambar 1. Induksi Magnetik
+            <p><br></p>
+            <br>
+            <h2 class="JudulParagraf">Proses Terjadinya Induksi Magnetik</h2>
+            <br>
+            <p class="ratakanankiri">Induksi elektromagnetik adalah kejadian di mana terjadi aliran listrik yang
+                disebabkan oleh perubahan fluks magnetik dalam suatu kumparan atau konduktor, atau ketika konduktor
+                tersebut bergerak melintasi medan magnetik.
+            </p>
+            <img src="faradayPercobaan.png" alt="Deskripsi Gambar" width="550" height="300"
+                style="margin: 10px; border: 1px solid black;">
+            Gambar 2. Ilustrasi Percobaan Faraday
+            <p><br></p>
+            <p class="ratakanankiri">Ketika kutub utara magnet bergerak ke arah dalam kumparan, jarum galvanometer akan
+                mengalami simpangan ke arah tertentu (misalnya ke kanan). Namun, jarum galvanometer segera kembali ke
+                posisi netral (tidak terjadi simpangan) saat magnet tersebut tetap diam di dalam kumparan untuk
+                sementara waktu. Ketika magnet batang ditarik keluar, jarum galvanometer akan mengalami simpangan ke
+                arah yang berlawanan (misalnya ke kiri). Simpangan jarum galvanometer terjadi karena adanya aliran arus
+                dalam kumparan. Arus listrik ini muncul karena terjadi perbedaan potensial di kedua ujung kumparan saat
+                magnet batang bergerak masuk atau keluar dari kumparan. Perbedaan potensial yang terjadi ini dikenal
+                sebagai Gaya Gerak Listrik Induksi (ggl induksi).
+            </p>
+            <br>
+            <p class="ratakanankiri">Ketika magnet batang digerakkan masuk ke dalam kumparan, terjadi peningkatan jumlah
+                garis gaya magnetik yang memotong kumparan (yang menyebabkan simpangan pada galvanometer atau adanya
+                aliran arus). Ketika batang magnet diam sejenak, jarum galvanometer kembali ke posisi awal (tanpa adanya
+                aliran arus). Saat batang magnet dikeluarkan, terjadi pengurangan jumlah garis gaya magnetik yang
+                memotong kumparan (yang mengakibatkan simpangan galvanometer ke arah yang berlawanan). Oleh karena itu,
+                karena terjadinya perubahan jumlah garis gaya magnetik yang memotong kumparan, terdapat perbedaan
+                potensial atau gaya gerak listrik induksi (ggl induksi) di kedua ujung kumparan. Arus listrik yang
+                disebabkan oleh perubahan jumlah garis gaya magnetik yang memotong kumparan disebut arus induksi.
+            </p>
+            <br>
+            <p class="bold ratakanankiri">
+                Terdapat tiga faktor yang mempengaruhi besarnya gaya gerak listrik induksi (ggl induksi), yaitu:
+            </p>
+
+            <p class="ratakanankiri">
+                (1) Jumlah lilitan pada kumparan: Besar ggl induksi bergantung pada jumlah lilitan yang terdapat pada
+                kumparan. Semakin banyak lilitan, semakin besar ggl induksi yang dihasilkan.
+            </p>
+            <p class="ratakanankiri">
+                (2) Kecepatan gerakan magnet masuk dan keluar dari kumparan: Besar ggl induksi juga dipengaruhi oleh
+                kecepatan gerakan magnet saat masuk dan keluar dari kumparan. Semakin cepat gerakan magnet, semakin
+                besar ggl induksi yang terjadi.
+            </p>
+            <p class="ratakanankiri">
+                (3) Kuat magnet pada batang: Besar ggl induksi juga tergantung pada kuat magnet yang digunakan pada
+                batang magnet. Semakin kuat magnet, semakin besar ggl induksi yang akan dihasilkan.
+            </p>
+            <br>
+            <br>
+            <h2 class="JudulParagraf">
+                Penerapan Induksi Elektromagnetik ( Penerapan GGL Induksi dalam kehidupan sehari-hari )
+            </h2>
+            <br>
+            <p class="ratakanankiri">Pada proses induksi elektromagnetik, terjadi transformasi energi kinetik menjadi
+                energi listrik. Induksi elektromagnetik digunakan dalam pembangkit energi listrik, seperti generator dan
+                dinamo.
+            </p>
+            <br>
+            <p class="ratakanankiri">
+                Generator dan dinamo memiliki komponen utama berupa kumparan dan magnet. Ketika kumparan atau magnet
+                berputar, terjadi perubahan jumlah garis gaya magnetik dalam kumparan. Perubahan ini menghasilkan gaya
+                gerak listrik induksi (GGL induksi) pada kumparan.
+            </p>
+            <br>
+            <p class="ratakanankiri">
+                Energi mekanik yang diberikan kepada generator dan dinamo diubah menjadi energi gerak rotasi. Hal ini
+                menyebabkan GGL induksi terus-menerus terjadi dengan pola yang berulang secara periodik.
+            </p>
+            <br>
+            <br>
+            <h2 class="JudulParagraf">Generator Listrik</h2>
+            <br>
+            <p class="ratakanankiri">Generator adalah alat untuk mengubah energi mekanik menjadi energi listrik.
+                Generator ada dua jenis yaitu generator arus searah (DC) atau dynamo dan generator arus bolak-balik (AC)
+                atau alternator. Generator bekerja berdasarkan prinsip induksi elektromagnetik yaitu dengan memutar
+                suatu kumparan dalam medan magnet sehingga timbul GGL induksi.
+            </p>
+            <img src="generator.jpeg" alt="Deskripsi Gambar" width="400" height="200"
+                style="margin: 10px; border: 1px solid black;"> Gambar 3. Generator AC
+            <p><br></p>
+            <p class="ratakanankiri">Jika kumparan dengan N buah lilitan diputar dengan kecepatan sudut w, maka GGL
+                induksi yang dihasilkan oleh generator adalah :</p>
+            <p class="ratakanankiri">ε = B.A.ω.N.sinθ</p>
+            <p class="ratakanankiri">GGL induksi akan maksimum jika θ = 90o atau sin θ = 1 , sehingga :</p>
+            <p class="ratakanankiri">ε max = B.A.ω.N , sehingga persamaan di atas dapat ditulis menjadi:</p>
+            <p class="ratakanankiri">ε = ε max sin θ</p>
+            <p class="ratakanankiri">ε = GGL induksi (Volt); εmax= GGL induksi maksimum (volt)</p>
+            <p class="ratakanankiri">N = jumlah lilitan kumparan; B = induksi magnet (T); A=luas bidang kumparan (m2)
+            </p>
+            <p class="ratakanankiri">ω = kecepatan sudut kumparan (rad/s); t = waktu (s); θ = ω.t = sudut (o)</p>
+            <br>
+            <br>
+            <h2 class="JudulParagraf">Transformator</h2>
+            <br>
+            <p class="ratakanankiri">Trafo adalah sebuah perangkat yang digunakan untuk mengubah tegangan AC dengan cara
+                memanfaatkan prinsip induksi elektromagnetik. Prinsip ini melibatkan transfer energi listrik melalui
+                kumparan primer ke kumparan skunder, dengan kemampuan untuk memperbesar atau memperkecil tegangan
+                tersebut. Ketika arus listrik bolak-balik mengalir melalui kumparan primer dan diinduksikan oleh bahan
+                ferromagnetik seperti besi lunak, tercipta medan magnet yang berubah-ubah. Hal ini menghasilkan GGL
+                (gaya gerak listrik) pada kumparan skunder.
+            </p>
+            <img src="trafo.jpeg" alt="Deskripsi Gambar" width="400" height="200"
+                style="margin: 10px; border: 1px solid black;">Gambar 4. Transformator step down
+            <p><br></p>
+            <p class="ratakanankiri">
+                Terdapat dua tipe trafo yang umum digunakan, yaitu trafo step-up dan trafo step-down. Trafo step-up
+                dirancang untuk meningkatkan tegangan AC dari sumbernya, dengan jumlah lilitan pada kumparan skunder
+                yang lebih banyak dibandingkan dengan kumparan primer. Sementara itu, trafo step-down berperan dalam
+                menurunkan tegangan AC dari sumbernya, dengan jumlah lilitan pada kumparan skunder yang lebih sedikit
+                dibandingkan dengan kumparan primer.
+            </p>
+            <br>
+            <img src="Rumus.jpeg" alt="Deskripsi Gambar" width="200" height="100"
+                style="margin: 10px; border: 1px solid black;">
+            <p><br></p>
+            <p class="ratakanankiri">Np = tegangan primer; Ns = tegangan skunder</p>
+            <p class="ratakanankiri">Pp = daya primer (Watt); Ps = daya skunder (Watt)</p>
+            <p class="ratakanankiri">Ip = kuat arus primer (A); Is = kuat arus skunder (A)</p>
+            <br>
+            <br>
+            <h2 class="JudulParagraf">Macam-Macam Transformator</h2>
+            <br>
+            <p class="ratakanankiri">Apabila tegangan terminal output lebih besar daripada tegangan yang diubah, trafo
+                yang digunakan berfungsi sebagai penaik tegangan. Sebaliknya apabila tegangan terminal output lebih
+                kecil daripada tegangan yang diubah, trafo yang digunakan berfungsi sebagai penurun tegangan. Dengan
+                demikian, transformator (trafo) dibedakan menjadi dua, yaitu trafo step up dan trafo step down.
+            </p>
+            <br>
+            <p class="ratakanankiri bold">Trafo step up adalah transformator yang berfungsi untuk menaikkan tegangan AC.
+                Trafo ini memiliki ciri-ciri:
+
+            </p>
+            <p class="ratakanankiri">1. jumlah lilitan primer lebih sedikit daripada jumlah lilitan sekunder,</p>
+            <p class="ratakanankiri">2. tegangan primer lebih kecil daripada tegangan sekunder,</p>
+            <p class="ratakanankiri">3. kuat arus primer lebih besar daripada kuat arus sekunder.</p>
+            <br>
+            <p class="ratakanankiri bold">Trafo step down adalah transformator yang berfungsi untuk menurunkan tegangan
+                AC. Trafo ini memiliki ciri-ciri:</p>
+            <p class="ratakanankiri ">1. jumlah lilitan primer lebih banyak daripada jumlah lilitan sekunder,</p>
+            <p class="ratakanankiri ">2. tegangan primer lebih besar daripada tegangan sekunder,</p>
+            <p class="ratakanankiri ">3. kuat arus primer lebih kecil daripada kuat arus sekunder.</p>
+            <br>
+            <br>
+            <h2 class="JudulParagraf">I. Transformator Ideal</h2>
+            <br>
+            <p class="ratakanankiri ">Besar tegangan dan kuat arus pada trafo bergantung banyaknya lilitan. Besar
+                tegangan sebanding dengan jumlah lilitan. Makin banyak jumlah lilitan tegangan yang dihasilkan makin
+                besar. Hal ini berlaku untuk lilitan primer dan sekunder. Hubungan antara jumlah lilitan primer dan
+                sekunder dengan tegangan primer dan tegangan sekunder dirumuskan rms12. Trafo dikatakan ideal jika tidak
+                ada energi yang hilang menjadi kalor, yaitu ketika jumlah energi yang masuk pada kumparan primer sama
+                dengan jumlah energi yang keluar pada kumparan sekunder. Hubungan antara tegangan dengan kuat arus pada
+                kumparan primer dan sekunder dirumuskan rms2Jika kedua ruas dibagi dengan t, diperoleh rumus rms3Dalam
+                hal ini faktor (V × I) adalah daya (P) transformator.
+            </p>
+            <br>
+            <p class="ratakanankiri">Berdasarkan rumus-rumus di atas, hubungan antara jumlah lilitan primer dan sekunder
+                dengan kuat arus primer dan sekunder dapat dirumuskan sebagai rms4 Dengan demikian untuk transformator
+                ideal akan berlaku persamaan berikut.
+            <p class="bold">rms5 Dengan:</p>
+            </p>
+            <p class="ratakanankiri">Vp = tegangan primer (tegangan input = Vi ) dengan satuan volt (V)</p>
+            <p class="ratakanankiri">Vs = tegangan sekunder (tegangan output = Vo) dengan satuan volt (V)</p>
+            <p class="ratakanankiri">Np = jumlah lilitan primer</p>
+            <p class="ratakanankiri">Ns = jumlah lilitan sekunder</p>
+            <p class="ratakanankiri">Ip = kuat arus primer (kuat arus input = Ii) dengan satuan ampere (A)</p>
+            <p class="ratakanankiri">Is = kuat arus sekunder (kuat arus output = Io) dengan satuan ampere (A)</p>
+            <br>
+            <h2 class="JudulParagraf">II. Efisiensi Transformator</h2>
+            <br>
+            <p class="ratakanankiri">Di bagian sebelumnya kamu sudah mempelajari transformator atau trafo yang ideal.
+                Namun, pada kenyataannya trafo tidak pernah ideal. Jika trafo digunakan, selalu timbul energi kalor.
+                Dengan demikian, energi listrik yang masuk pada kumparan primer selalu lebih besar daripada energi yang
+                keluar pada kumparan sekunder. Akibatnya, daya primer lebih besar daripada daya sekunder. Berkurangnya
+                daya dan energi listrik pada sebuah trafo ditentukan oleh besarnya efisiensi trafo. Perbandingan antara
+                daya sekunder dengan daya primer atau hasil bagi antara energi sekunder dengan energi primer yang
+                dinyatakan dengan persen disebut efisiensi trafo. Efisiensi trafo dinyatakan dengan η.
+            </p>
+            <br>
+            <br>
+            <h2 class="JudulParagraf">Induktor</h2>
+            <br>
+            <p class="ratakanankiri">Dalam bidang elektronika, induktor merupakan salah satu komponen yang beroperasi
+                berdasarkan prinsip induksi magnetik. Induktor juga sering disebut dengan sebutan spul, yang terbuat
+                dari kawat beremail tipis. Induktor umumnya terbuat dari tembaga dan memiliki simbol L dengan satuan
+                pengukuran Henry (H). Fungsi utama dari induktor adalah untuk menciptakan medan magnet. Induktor
+                biasanya berbentuk kawat yang dililitkan sehingga membentuk kumparan. Kemampuan induktor untuk
+                menciptakan medan magnet ini disebut sebagai konduktansi.
+            </p>
+            <br>
+            <p class="ratakanankiri">Satuan pengukuran induktansi adalah henry (H) atau milihenry (mH). Untuk
+                meningkatkan induktansi, seringkali bahan inti disisipkan di dalam kumparan. Induktor yang memiliki inti
+                dari bahan besi disebut sebagai elektromagnet. Induktor memiliki sifat untuk menahan arus bolak-balik
+                (AC) dan bersifat konduktif terhadap arus searah (DC).
+            </p>
+            <br>
+            <br>
+            <h2 class="JudulParagraf">Macam-Macam Induktor</h2>
+            <br>
+            <p class="ratakanankiri bold">Macam-macam induktor menurut bahan pembuat intinya dapat dibagi 4 yaitu :</p>
+
+            <img src="induktor.jpg" alt="Deskripsi Gambar" width="500" height="350"
+                style="margin: 10px; border: 1px solid black;">
+            <br>
+            <p class="JudulParagraf">Simbol Induktor</p>
+            <img src="Simbol Induktor.jpeg" alt="Deskripsi Gambar" width="400" height="300"
+                style="margin: 10px; border: 1px solid black;">
+            <p><br></p>
+            <br>
+            <h2 class="JudulParagraf">Kegunaan Induktor dalam sistem elektronik</h2>
+            <br>
+            <p class="ratakanankiri bold">Induktor dalam rangkaian listrik atau elektronika dapat diaplikasikan kedalam
+                rangkaian:</p>
+            <img src="bentuk induktor.jpeg" alt="Deskripsi Gambar" width="450" height="300"
+                style="margin: 10px; border: 1px solid black;">
+            <p><br></p>
+
+            <p class="ratakanankiri bold">Induktor berfungsi sebagai :</p>
+            <p class="ratakanankiri">1. tempat terjadinya gaya magnet.</p>
+            <p class="ratakanankiri">2. pelipat tegangan.</p>
+            <p class="ratakanankiri">3. pembangkit getaran.</p>
+            <br>
+            <p class="ratakanankiri bold">Berdasarkan kegunaannya Induktor bekerja pada :</p>
+            <br>
+            <p class="ratakanankiri">1. frekuensi tinggi pada spul antena dan osilator.</p>
+            <p class="ratakanankiri">2. frekuensi menengah pada spul MF.</p>
+            <p class="ratakanankiri">3. frekuensi rendah pada trafo input, trafo output, spul speaker, trafo tenaga,
+                spul relay dan spul penyaring.
+            </p>
+            <br>
+            <br>
+            <h2 class="JudulParagraf">Terjadinya Medan Magnet Induktansi Searah
+            </h2>
+            <br>
+            <p class="ratakanankiri">Bila kita mengalirkan arus listrik melalui kabel, terjadilah garis-garis gaya
+                magnet. Bila kita mengalirkan arus melalui spul atau coil (kumparan) yang dibuat dari kabel yang
+                digulung, akan terjadi garis-garis gaya dalam arah sama yang membangkitkan medan magnet. Kekuatan medan
+                magnet sama dengan jumlah garis-garis gaya magnet, dan berbanding lurus dengan hasil kali dari jumlah
+                gulungan dalam kumparan dan arus listrik yang melalui kumparan tersebut.
+            </p>
+            <img src="induktor DC.jpeg" alt="Deskripsi Gambar" width="400" height="300"
+                style="margin: 10px; border: 1px solid black;">Induktor terhubung sumber tegangan DC <p><br></p>
+            <br>
+            <p class="ratakanankiri bold">Induktansi Bolak-balik</p>
+            <br>
+            <p class="ratakanankiri">Bila dua kumparan ditempatkan berdekatan satu sama lain dan salah satu kumparan
+                (L1) diberi arus listrik AC, pada L1 akan terjadi fluks magnet. Fluk magnet ini akan melalui kumparan
+                kedua (L2) dan akan membangkitkan emf (elektro motorive force) pada kumparan L2. Efek seperti ini
+                disebut induksi timbal balik (mutual induction). Hal seperti ini biasanya kita jumpai pada transformator
+                daya.
+            </p>
+            <img src="induktor AC.jpeg" alt="Deskripsi Gambar" width="400" height="300"
+                style="margin: 10px; border: 1px solid black;">Induktor terhubung sumber tegangan AC <p><br></p>
+            <br>
+            <p class="ratakanankiri">Perlawanan yang diberikan kumparan tersebut dinamakan reaktansi induktif. Reaktansi
+                Induktif ini diberi simbol XL dalam satuan Ohm.
+            </p>
+            <br>
+            <p class="bold">XL = 2πfL</p>
+            <br>
+            <p class="ratakanankiri">KETERANGAN : </p>
+            <p class="ratakanankiri">π = 3.14</p>
+            <p class="ratakanankiri">F = frekwensi arus bolak-balik ( Hz)</p>
+            <p class="ratakanankiri">L = Induktansi ( Henry )</p>
+            <p class="ratakanankiri">∞ = kecepatan sudut ( 2πfL)</p>
+            <p class="ratakanankiri">XL = reaktansi induktif ( Ω )</p>
+            <br>
+            <br>
+            <h2 class="ratakanankiri JudulParagraf">Pengisian Induktor</h2>
+            <br>
+            <p class="ratakanankiri">Bila kita mengalirkan arus listrik I, maka terjadilah garis-garis gaya magnet. Bila
+                kita mengalirkan arus melalui spul atau coil (kumparan) yang dibuat dari kabel yang digulung,a akan
+                terjadi garis-garis gaya dalam arah sama membangkitkan medan magnet. Kekuatan medan magnet sama dengan
+                jumlah garis-garis gaya magnet dan berbanding lurus dengan hasil kali dari jumlah gulungan dalam
+                kumparan dan arus listrik yang melalui kumparan tersebut.
+            <p class="bold"> Contoh rangkaian :</p>
+            </p>
+            <img src="pengisian DC.jpeg" alt="Deskripsi Gambar" width="400" height="300"
+                style="margin: 10px; border: 1px solid black;">Rangkaian Pengisian Induktasi dengan tegangan DC <p><br>
+            </p>
+            <p class="ratakanankiri">Bila arus bolak–balik mengalir pada induktor, maka akan timbul gaya gerak listrik
+                (ggl) induksi Hal ini berarti antara arus dan tegangan berbeda fase sebesar Л / 2 = 900 dan arus
+                tertinggal (lag) dari tegangan sebesar 900. 2Лf merupakan perlawanan terhadap aliran arus.</p>
+            <img src="pengisian AC.jpeg" alt="Deskripsi Gambar" width="400" height="300"
+                style="margin: 10px; border: 1px solid black;">Rangkaian Pengisian Induktasi dengan tegangan AC <p><br>
+                <br>
+            <h2 class="JudulParagraf">Pengosongan Induktor</h2>
+            <br>
+            <p class="ratakanankiri">Bila arus listrik l sudah memenuhi lilitan , maka terjadilah arus akan bergerak
+                berlawanan arah dengan proses pengisian sehingga pembangkitan medan magnet dengan garis gaya magnet yang
+                sama akan menjalankan fungsi dari lilitan tersebut makin tinggi nilai L ( induktansi) yang dihasilkan
+                maka makin lama proses pengosongannya.
+            </p>
+            <img src="pengosongan.jpeg" alt="Deskripsi Gambar" width="400" height="300"
+                style="margin: 10px; border: 1px solid black;">Rangkaian Pengosongan Induktasi<p><br>
+                <br>
+            <h2 class="ratakanankiri JudulParagraf">Menghitung Impedansi Induktor</h2>
+            <br>
+            <p class="ratakanankiri">Setelah diperoleh nilai XL maka Impedansi dapat di hitung :</p>
+            <p class="ratakanankiri">Z disebut impedansi Seri dengan satuan Ω (ohm).</p>
+            <br>
+            <br>
+            <h2 class="JudulParagraf">Rumus Induksi Elektromagnetik</h2>
+            <br>
+            <p class="ratakanankiri bold">1. Fluks Magnetik</p>
+            <br>
+            <p class="ratakanankiri">Fluks magnet diartikan sebagai perkalian antara medan magnet B (baca: medan magnet)
+                dengan luas bidang A yang letakknya tegak lurus dengan induksi magnetnya. Secara matematis rumus fluks
+                adalah
+            </p>
+            <p class="ratakanankiri">Φ = BA</p>
+            <img src="buatRumus.jpg" alt="Deskripsi Gambar" width="400" height="300"
+                style="margin: 10px; border: 1px solid black;">
+            <p><br>
+            <p class="ratakanankiri">Faktanya, induksi magnet B tidak selalu tegak lurus pada bidang, bisa membentuk
+                sudut tertentu. Misalkan ada sebuah induksi medan magnet yang membentuk sudut teta dengan garis normal
+                maka besarnya fluks magnet yang dihasilkan adalah
+            </p>>
+            <p class="bold">Φ = BA cos θ</p>
+            <br>
+            <p class="ratakanankiri">Φ = Fluks magnet</p>
+            <p class="ratakanankiri">B = induksi magnet</p>
+            <p class="ratakanankiri">A = luas bidang</p>
+            <p class="ratakanankiri">θ = sudut antara arah induksi magnet B dengan arah garis normal bidang</p>
+            <br>
+            <p class="ratakanankiri bold">Hukum Faraday</p>
+            <p class="ratakanankiri">Hasil percobaan yang dilakukan faraday menghasilkan sebuah hukum yang berbunyi :
+            </p>
+            <p class="ratakanankiri">=> Bila jumlah fluks magnet yang memasuki suatu kumparan berubah, maka pada
+                ujung-ujung kumparan timbul gaya gerak listrik induksi (ggl induksi)
+            </p>
+            <p class="ratakanankiri">=>Besarnya gaya gerak listrik induksi bergantung pada laju perubahan fluks dan
+                banyaknya lilitan.</p>
+            <br>
+            <p class="ratakanankiri">Secara matematis ggl yang dihasilkan dapat ditentukan dengan menggunakan rumus</p>
+            <br>
+            <p class="ratakanankiri bold">ε = -N (ΔΦ/Δt)</p>
+            <p class="ratakanankiri">(tanda negatif menunjukkan arah induksi)</p>
+            <br>
+            <p class="ratakanankiri">DENGAN : </p>
+            <p class="ratakanankiri">ε = ggl induksi (volt)</p>
+            <p class="ratakanankiri">N = jumlah lilitan</p>
+            <p class="ratakanankiri">ΔΦ/Δt = laju perubahan fluks magnet</p>
+            <p class="ratakanankiri"></p>
+            <br>
+            <p class="ratakanankiri">dari rumus di atas, untuk menimbulkan perubahan fluks magnet agar menghasilkan ggl
+                induksi dapat dilakukan dengan beberapa cara,
+            <p class="bold"> antara lain:</p>
+            </p>
+            <p class="ratakanankiri">=> memperbesar perubahan induksi magnet B</p>
+            <p class="ratakanankiri">=> memperkecil luas bindang A yang ditembus oleh medan magnet.</p>
+            <p class="ratakanankiri">=> memperkecil sudut</p>
+            <br>
+            <p class="ratakanankiri bold">2. Hukum Lenz</p>
+            <br>
+            <p class="ratakanankiri">Hukum Lenz berbunyi “arus induksi akan muncul di dalam arah yang sedemikian rupa
+                sehingga arah induksi menentang perubahan yang dihasilkan. Dengan kata lain, arah arus induksi yang
+                terjadi dalam suatu penghantar menimbulkan medan magnet yang menentang penyebab perubahan medan magnet
+                tersebut”. Perhatikan gambar di bawah ini
+            </p>
+            <img src="hukum lenz.jpeg" alt="Deskripsi Gambar" width="400" height="300"
+                style="margin: 10px; border: 1px solid black;">
+            <p><br></p>
+            <p class="ratakanankiri">Berdasarkan gambar di atas</p>
+            <p class="ratakanankiri">=> arah v merupakan arah dari penyebab perubahan/p>
+            <p class="ratakanankiri">=> arah gaya lorentz FL akan selalu berlawanan dengan arah v</p>
+            <p class="ratakanankiri">=> dengan menggunakan aturan tangan kanan, maka diperoleh arah I dari P ke Q</p>
+            <br>
+            <p class="ratakanankiri bold">Rumus Hukum Lenz</p>
+            <br>
+            <p class="ratakanankiri bold">ε = B. l v</p>
+            <br>
+            <p class="ratakanankiri">GGL Induksi Diri (Hukum Henry)
+                Apapbila arus yang mengalir pada suatu penghantar berubah setiap waktu maka pada penghantar tersebut kan
+                terjai ggl induksi diri dan oleh Josep Henry dirumuskan,
+            <p class="bold">sebagai :</p>
+            </p>
+            <br>
+            <p class="ratakanankiri bold">ε = -L (dI/dt)</p>
+            <br>
+            <p class="ratakanankiri">DENGAN :</p>
+            <p class="ratakanankiri">ε = ggl induksi diri (volt)</p>
+            <p class="ratakanankiri">L = induktansi diri</p>
+            <p class="ratakanankiri">dI/dt = besarnya perubahan arus tiap satuan waktu (A/s)</p>
+            <p class="ratakanankiri">DI/dt = besarnya perubahan arus tiap satuan waktu (A/s)</p>
+            <br>
+            <p class="ratakanankiri">Induksi diri (L) adalah ggl yang terjadi dalam suatu penghantar dan terterjadi
+                perubahan kuat arus 1 A setiap detiknya. Besarnya induksi diri pada sebuah penghantar,
+            <p class="bold">dirumuskan :</p>
+            </p>
+            <br>
+            <p class="ratakanankiri bold">L = NΦ/I</p>
+            <br>
+            <p class="ratakanankiri">DENGAN : </p>
+            <p class="ratakanankiri">L = induktansi diri</p>
+            <p class="ratakanankiri">N = jumlah lilitan kumparan</p>
+            <p class="ratakanankiri">Φ = fluks magnet (Wb)</p>
+            <p class="ratakanankiri">I = kuat arus</p>
+            <br>
+            <br>
+            <h2 class="JudulParagraf">
+                Faktor Penyebab Timbulnya Gaya Gerak Listrik Induksi
+            </h2>
+            <br>
+            <p class="ratakanankiri">Penyebab utama timbulnya ggl induksi adalah terjadinya perubahan fluks magnetik
+                yang dilingkupi oleh suatu loop kawat. Besarnya fluks magnetik telah dinyatakan pada persamaan (1).
+                Dengan demikian, ada tiga faktor penyebab timbulnya ggl pada suatu kumparan,
+            <p class="bold"> yaitu :</p>
+            </p>
+            <br>
+            <p class="ratakanankiri bold">1. Gaya Gerak Listrik Akibat Perluasan Kumparan dalam Medan Elektromagnetik
+            </p>
+            <img src="Perluasan Kumparan.jpeg" alt="Deskripsi Gambar" width="400" height="300"
+                style="margin: 10px; border: 1px solid black;">Gambar 5. Perluasan Kumparan dalam Medan Elektromagnetik
+            <p><br></p>
+            <p class="ratakanankiri">Kita asumsikan medan B tegak lurus terhadap permukaan yang dibatasi sebuah
+                konduktor berbentuk U. Sebuah konduktor lain yang dapat bergerak dengan kecepatan v dipasang pada
+                konduktor U. Dalam waktu Δt konduktor yang bergerak tersebut menempuh jarak:</p>
+
+            <P class="ratakanankiri">Δx = v.Δt</P>
+            <P class="ratakanankiri">Sehingga, luas bidang kumparan bertambah sebesar:</P>
+            <P class="ratakanankiri">ΔA = l . Δx = l .v .Δt</P>
+            <P class="ratakanankiri">Berdasarkan Hukum Faraday, akan timbul ggl induksi yang besarnya dinyatakan dalam
+                persamaan :</P>
+            <P class="ratakanankiri">ε = B . l . v</P>
+            <br>
+            <p class="ratakanankiri bold">2. Gaya Gerak Listrik Induksi Akibat Perubahan Orientasi Sudut Kumparan θ
+                Terhadap Medan Elektromagnetik</p>
+            <img src="Perubahan Orientasi.jpeg" alt="Deskripsi Gambar" width="400" height="300"
+                style="margin: 10px; border: 1px solid black;">Gambar 6. Perubahan Orientasi Sudut Kumparan θ Terhadap
+            Medan Elektromagnetik<p><br></p>
+            <p class="ratakanankiri">Perubahan sudut antara induksi magnetik B dan arah bidang normal dapat menyebabkan
+                timbulnya ggl induksi, yang besarnya dapat ditentukan melalui persamaan (4). Karena nilai B dan A
+                konstan, maka akan diperoleh :
+            </p>
+            <P class="ratakanankiri">Keterangan :</P>
+            <P class="ratakanankiri">ε = ggl induksi (volt)</P>
+            <P class="ratakanankiri">N = jumlah lilitan</P>
+            <P class="ratakanankiri">B = induksi magnet (Wb/m2)</P>
+            <P class="ratakanankiri">A = luas kumparan (m2)</P>
+            <P class="ratakanankiri">ω = kecepatan sudut (rad/s)</P>
+            <br>
+            <P class="ratakanankiri bold">3. Gaya Gerak Listrik Induksi Akibat Perubahan Induksi Magnetik</P>
+            <br>
+            <p class="ratakanankiri">Perubahan induksi magnetik juga dapat menimbulkan ggl induksi pada luasan bidang
+                kumparan yang konstan, yang dinyatakan sebagai berikut:
+            </p>
+            <img src="generator.jpeg" alt="Deskripsi Gambar" width="400" height="300"
+                style="margin: 10px; border: 1px solid black;">Gambar 7. GGL Induksi Akibat perubahan Induksi Magnetik
+            <p><br></p><br>
+            <h2 class="JudulParagraf">Induktansi</h2>
+            <br>
+            <img src="Induktansi Diri.jpeg" alt="Deskripsi Gambar" width="400" height="300"
+                style="margin: 10px; border: 1px solid black;">Gambar 8. Induktansi Diri<p><br></p>
+            <p class="ratakanankiri">Kumparan yang dirangkai paralel dengan lampu neon dihubungkan sumber tegangan
+                (baterai). Pada saat saklar ditutup lampu tidak menyala karena arus akan ke kumparan, sehingga sedikit
+                sekali atau hampir tidak ada arus yang lewat pada lampu neon. Adanya arus yang melalui kumparan inilah
+                yang menimbulkan medan magnetik di sekitar kumparan. Dari hasil pengamatan yang telah dilakukan,
+                ternyata bahwa pada saat arus diputus dengan membuka saklar, lampu menyala sesaat kemudian meredup dan
+                padam.
+            </p>
+            <br>
+            <p class="ratakanankiri">Saat saklar dibuka, arus pada kumparan hilang mendadak sehingga terjadi perubahan
+                fluks magnetik di sekitarnya yaitu dari ada menjadi tidak ada. Jadi timbul yang menunjukkan adanya GG
+                induksi dalam kumparan itu sendiri dan menyalakan lampu neon. GGL yang timbul disebut GGL induksi diri
+                kumparan (karena ditimbulkan oleh kumparan itu sendiri). “Besarnya GGL induksi diri sebanding dengan
+                laju perubahan kuat arus terhadap waktu”.
+
+            </p>
+            <br>
+            <p class="ratakanankiri">Dirumuskan sebagai berikut :</p><br>
+            <p class="ratakanankiri bold">E = – L</p><br>
+            <p class="ratakanankiri">L = Induksi diri, satuannya Henry</p>
+            <p class="ratakanankiri">E = GGL induksi, satuannya Volt</p>
+            <p class="ratakanankiri">= laju perubaha kuat arus, satuannya ampere/detik</p>
+            <br>
+            <p class="ratakanankiri">Tanda negatif menunjukan bahwa GGL induksi yang timbul adalah melawan GGL
+                penyebabnya (Hukum Lenz). Karena perubahan kuat arus dalam kumparan berarti juga perubahan fluks
+                magnetik dalam kumparan,
+            </p><br>
+            <p class="ratakanankiri">maka Hukum faraday E = – N dapat dijadikan :</p>
+            <p class="ratakanankiri">– L = – N = L di = N dϕ atau L i = Nϕ</p>
+            <br>
+            <p class="ratakanankiri">Maka L =</p>
+
+            <p class="ratakanankiri">Induktasi diri suatu penghatar sebesar 1 Henry didefinisikan sebagai perubahan kuat
+                arus 1 ampere setiap detik secara beraturan yang menyebabkan timbulnya GGL induksi diri sebesar 1 Volt.
+                Bila kumparan berupa solenoid atau tiroid, maka induktasi dirinya dapat ditentukan sebagai berikut
+            </p>
+            <br>
+            <p class="ratakanankiri">Induktasi magnetik dipusat solenoid</p><br>
+            <p class="ratakanankiri bold">B = μo n i = μo</p>
+            <p class="ratakanankiri bold">Sedangkan ϕ = B A = μo</p>
+            <br>
+            <p class="ratakanankiri">Karena L = = , maka L =</p>
+            <p class="ratakanankiri">L = Induktasi diri solenoid atau toroid</p>
+            <p class="ratakanankiri">μo = Permeabilitas ruang hampa</p>
+            <p class="ratakanankiri">N = Jumlah lilitan</p>
+            <p class="ratakanankiri">A = Luas penampang solenoid atau toroid</p>
+            <p class="ratakanankiri">Ditanya ? = Panjang solenoid atau toroid</p><br>
+            <h2 class="JudulParagraf">Energi yang tersimpan dalam induktor</h2><br>
+            <p class="ratakanankiri">Telah kita ketahui bahwa daya yang dihasilkan oleh pengantar yang dilalui arus i
+                adalah P = E i , dalam hal ini E = L ; P = L i sedangkan P = , maka = L i ; dW = L i di
+            </p>
+            <p class="ratakanankiri">Untuk memperoleh usaha/energi yang ada dalam induktor selama arus diubah dari nol
+                sampai 1 maka = L</p>
+            <br>
+            <p class="ratakanankiri bold">W = L L i2</p>
+            <br>
+            <br>
+            <h2 class="JudulParagraf">Contoh Soal Induksi Elektromagnetik</h2><br>
+            <p class="ratakanankiri">1. Sebuah kumparan dengan jumlah lilitan 100 dalam waktu 0,01 detik menimbulkan
+                perubhan fluks magnet sebesar 10-4 Wb, berapat ggl induksi yang timbul pada ujung-ujung kumparan
+                tersebut?
+            </p><br>
+            <p class="ratakanankiri bold">Pembahasan</p><br>
+            <p class="ratakanankiri bold">Diketahui</p><br>
+            <p class="ratakanankiri">N = 100 lilitan</p>
+            <p class="ratakanankiri">dΦ /dt = 10-4 Wb/ 0,01 s = 10-2 Wb/s</p>
+            <p class="ratakanankiri bold">ε = -N (dΦ/dt)</p>
+            <p class="ratakanankiri">ε = – 100 (10-2)</p>
+            <p class="ratakanankiri">ε = -1 volt</p>
+            <p class="ratakanankiri">(tanda negatif hanya menunjukkan arah arus induksi)</p><br>
+            <p class="ratakanankiri bold">Jadi total ggl induksi elektromagnet yang dihasilkan di ujung-ujung kumparan
+                tersebut 1 Volt</p><br>
+            <p class="ratakanankiri bold">Kesimpulan</p><br>
+            <p class="ratakanankiri">Timbulnya gaya listrik (GGL) pada kumparan hanya apabila terjadi perubahan jumlah
+                garis-garis gaya magnet. Gaya gerak listrik yang timbul akibat adanya perubahan jumlah garis-garis gaya
+                magnet disebut GGL induksi, sedangkan arus yang mengalir dinamakan arus induksi dan peristiwanya disebut
+                induksi elektromagnetik. Ada beberapa faktor yang mempengaruhi besar GGL induksi yaitu:
+            </p><br>
+            <p class="ratakanankiri">1. Kecepatan perubahan medan magnet. Semakin cepat perubahan medan magnet, maka GGL
+                induksi yang timbul semakin besar.</p>
+            <p class="ratakanankiri">2. Banyaknya lilitan Semakin banyak lilitannya, maka GGL induksi yang timbul juga
+                semakin besar.</p>
+            <p class="ratakanankiri">3. Kekuatan magnet Semakin kuat gelaja kemagnetannya, maka GGL induksi yang timbul
+                juga semakin besar.</p><br>
+            <p class="ratakanankiri">Konsep induksi elektromagnetik dapat diterapkan dalam produk teknologi seperti;</p>
+            <br>
+            <p class="ratakanankiri">1. Generator adalah alat yang dapat merubah energi gerak menjadi energi listrik.
+                Prinsip yang digunakan adalah perubahan sudut berdasarkan hukum Faraday sehingga terjadi perubahan fluks
+                magnetik.
+            </p>
+            <p class="ratakanankiri">2. Transformator atau trafo merupakan alat untuk mengubah (memperbesar atau
+                memperkecil) tegangan AC berdasarkan prinsip induksi elektromagnetik yaitu memindahkan energi listrik
+                secara induksi melalui kumparan primer ke kumparan skunder.
+            </p>
+            <p class="ratakanankiri">3. Induktor adalah salah satu komponen yang cara kerjanya berdasarkan induksi
+                magnet.
+                Induktor biasa disebut juga spul dibuat dari bahan kawat beremail tipis. Induktor berupa kawat yang
+                digulung sehingga menjadi kumparan. Kemampuan induktor untuk menimbulkan medan magnet disebut
+                konduktansi.
+            </p><br><br>
+            <p class="bold">Contoh Soal Arah dan Besar Arus Pada Konduktor </p>
+            <br>
+            <img src="Soal 1.png" alt="Deskripsi Gambar" width="400" height="300"
+                style="margin: 10px; border: 1px solid black;">
+            <p><br></p>
+            <p class="bold">Jawaban:</p>
+            <p>
+                <img src="Jawaban 1.png" alt="Deskripsi Gambar" width="400" height="300"
+                    style="margin: 10px; border: 1px solid black;">
+            <p><br></p>
+            <br><br>
+            <p class="bold">Contoh Soal Besar dan Arah Kuat Arus Pada Kawat</p>
+            <p>
+                <img src="Soal 2.png" alt="Deskripsi Gambar" width="400" height="300"
+                    style="margin: 10px; border: 1px solid black;">
+            <p><br></p>
+            <p class="bold">Jawaban:</p>
+            <p>
+                <img src="Jawaban 2.png" alt="Deskripsi Gambar" width="400" height="300"
+                    style="margin: 10px; border: 1px solid black;">
+            <p><br></p>
+            </p>
+
+            <br><br>
+
+            <p class="ratakanankiri i">Daftar Pustaka
+            </p>
+            <p class="ratakanankiri i"> Crowell, B., 2006. Conceptual Physics. s.l.:s.n.
+                Handayani, S., 2009. Fisika Untuk SMA Kelas XII. Jakarta: Departemen Pendidikan Nasional.</p><br>
+            <p class="ratakanankiri bold Judul">Ini adalah ringkasan komprehensif tentang Induksi Elektromagnetik.
+                Semoga
+                ulasan di
+                atas memberikan manfaat. Demikianlah penjelasan singkat yang dapat disampaikan. Terima kasih atas
+                perhatiannya.
+            </p>
+            <p class="ratakanankiri"></p>
+            <p class="ratakanankiri"></p>
+            <p class="ratakanankiri"></p>
+
+        </div>
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+
+    </html>
